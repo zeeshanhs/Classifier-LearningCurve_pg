@@ -5,13 +5,10 @@ import matplotlib.pyplot as plt
 import sklearn
 
 from sklearn.tree import DecisionTreeRegressor
-# from sklearn.datasets import load_boston
 from sklearn import svm, datasets
 from sklearn.model_selection import train_test_split
 from sklearn.utils import check_random_state
 from IPython.display import display # To display entire dataset
-
-from titanic_visualizations import survival_stats
 
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import make_scorer
@@ -104,3 +101,7 @@ def plot_learning_curve(estimator, title, X, y, ylim=None, cv=None,
 
     plt.legend(loc="best")
     return plt
+	
+digits = load_digits()
+X, y = digits.data, digits.target
+
