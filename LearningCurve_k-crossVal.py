@@ -13,5 +13,15 @@ from IPython.display import display # To display entire dataset
 
 from titanic_visualizations import survival_stats
 
+from sklearn.model_selection import GridSearchCV
+from sklearn.metrics import make_scorer
+from sklearn.metrics import f1_score
+
+from sklearn.naive_bayes import GaussianNB
+from sklearn.svm import SVC
+from sklearn.datasets import load_digits
+from sklearn.model_selection import learning_curve
+from sklearn.model_selection import ShuffleSplit
+
 print( np.zeros(5) )
 #adding a temp change
